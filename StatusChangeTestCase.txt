@@ -1,0 +1,11 @@
+1. Test endpoint '/start' by entering an invalid user ID e.g. special characters, less/more than expected characters. Verify that the status changes to S5.
+
+2. Enter valid user ID to test that '/start' endpoint successfully creates a resource and status changes to S1.
+
+3. Test endpoint '/run' by entering an invalid user ID as well as invalid resource. Also check by entering valid user ID and invalid resource and also invalid user ID and valid resource to cover all scenarios. In all these cases, the status should change to S5.
+
+4. Enter valid user ID and valid resource to test that '/run' endpoint successfully changes the status to S2-S3.
+
+5. Repeat checks from point no. 3 for the '/stop' endpoint. Invalid cases should change the status to S5.
+
+6. Similarly, repeat check in point no. 4 for '/stop' endpoint to check the status chages to S4 and then S5.
